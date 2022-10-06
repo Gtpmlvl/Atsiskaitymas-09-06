@@ -19,7 +19,6 @@ body {
 .container {
   padding-left: 32px;
   padding-right: 32px;
-  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,7 +34,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 32px;
-  max-width: 428px;
 }
 .header .logo {
   width: 198px;
@@ -48,14 +46,8 @@ body {
 }
 
 .hero {
-  padding-top: 80px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 80px;
-  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   overflow: hidden;
 }
 .hero .hero-smallTitle {
@@ -99,20 +91,30 @@ body {
   background-color: transparent;
 }
 .hero .hero-launching {
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 80px;
 }
 .hero .hero-launchingPhoto {
-  position: absolute;
-  top: 21px;
-  left: 253px;
+  width: 100%;
+  position: relative;
 }
 .hero .hero-launchingImage {
-  height: 300px;
+  height: 100%;
+  position: absolute;
+  top: -114px;
+  right: -220px;
+  z-index: -1;
+  overflow: hidden;
 }
 
 .free-nft {
-  max-width: 428px;
   height: 326px;
   margin-left: auto;
   margin-right: auto;
@@ -150,7 +152,6 @@ body {
 }
 
 .companies {
-  max-width: 428px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -194,10 +195,24 @@ body {
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
-  width: 290px;
   padding: 24px;
   background: #EEEEEE;
-  border-radius: 16px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+}
+.auction .auction-cardsGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 290px;
+  gap: 18px;
+}
+.auction .auction-cards {
+  width: 290px;
+  height: 278px;
 }
 .auction .card-diamondPrice {
   display: -webkit-box;
@@ -218,20 +233,11 @@ body {
   margin-bottom: 6px;
   margin-top: 0;
 }
-
-@media screen and (min-width: 428px) {
-  .hero {
-    max-width: 1250px;
-  }
-  .hero .hero-launching {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .hero .hero-launchingPhoto {
-    position: static;
-  }
+.auction .image-space {
+  width: 100%;
+  height: 100%;
+}
+.auction .auction-img {
+  width: 290px;
+  height: 278px;
 }/*# sourceMappingURL=main.css.map */
