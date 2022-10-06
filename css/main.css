@@ -1,4 +1,21 @@
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+  width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,4 +26,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 32px;
+}
+.header .logo {
+  width: 198px;
+  height: 36px;
+}
+.header .burger {
+  font-size: 24px;
+  color: #999999;
+  height: 22px;
 }/*# sourceMappingURL=main.css.map */
