@@ -10,6 +10,10 @@ body {
 
 body {
   font-family: "Inter";
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
 }
 
 .container {
@@ -101,4 +105,39 @@ body {
   top: 25px;
   left: 190px;
   width: 100%;
+}
+
+.free-nft {
+  height: 326px;
+  width: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF3998), color-stop(#FF8139), to(#39FFA0));
+  background: linear-gradient(0deg, #FF3998, #FF8139, #39FFA0);
+}
+.free-nft .nft-container {
+  height: 326px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.free-nft .flexas {
+  padding-top: 122px;
+  padding-bottom: 32px;
+}
+.free-nft .nft-Heading {
+  font-size: 40px;
+  line-height: 48px;
+  color: #111111;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.free-nft .nft-subText {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #111111;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

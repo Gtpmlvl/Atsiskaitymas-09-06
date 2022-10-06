@@ -4,6 +4,9 @@
 
 body{
   font-family: 'Inter';
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
   
 }
 
@@ -125,5 +128,45 @@ body{
   
   
 
+}
+
+.free-nft{
+  height: 326px;
+  width: 100%;
+  background:linear-gradient(0deg, #FF3998, #FF8139, #39FFA0);
+  
+
+   .nft-container{
+    
+    height: 326px;
+    display: flex;
+    align-items: flex-end;
+    
+    
+   }
+   .flexas{
+    padding-top: 122px;
+    padding-bottom: 32px;
+   }
+
+  .nft-Heading{
+    font-size:40px;
+    line-height: 48px;
+    color: #111111;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 12px;
+   
+
+
+  }
+  .nft-subText{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color:#111111;
+    margin: 0;
+   
+  }
 }
 
