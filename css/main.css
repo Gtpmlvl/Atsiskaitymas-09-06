@@ -50,6 +50,7 @@ body {
 .hero {
   padding-top: 80px;
   padding-left: 32px;
+  padding-right: 32px;
   padding-bottom: 80px;
   max-width: 428px;
   margin-left: auto;
@@ -97,21 +98,27 @@ body {
   text-align: center;
   background-color: transparent;
 }
-
-.hero-launchingImage {
-  width: 190px;
-  height: 278px;
+.hero .hero-launching {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero .hero-launchingPhoto {
   position: absolute;
-  top: 25px;
-  left: 190px;
-  width: 100%;
+  top: 21px;
+  left: 253px;
+}
+.hero .hero-launchingImage {
+  height: 300px;
 }
 
 .free-nft {
+  max-width: 428px;
   height: 326px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#FF3998), color-stop(#FF8139), to(#39FFA0));
-  background: linear-gradient(0deg, #FF3998, #FF8139, #39FFA0);
+  background-image: url("../IMG/background.svg");
+  background-size: cover;
 }
 .free-nft .nft-container {
   height: 326px;
@@ -140,4 +147,91 @@ body {
   line-height: 30px;
   color: #111111;
   margin: 0;
+}
+
+.companies {
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.companies .notOnmobile {
+  display: none;
+}
+.companies .companies-group {
+  display: grid;
+  grid-template-columns: 182px auto;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  -webkit-column-gap: 28px;
+     -moz-column-gap: 28px;
+          column-gap: 28px;
+  row-gap: 28px;
+}
+.companies .company-logo {
+  width: 156px;
+}
+
+.auction .card-smallHeading {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #FF8139;
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+.auction .card-bid {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.auction .card-name {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.auction .card-info {
+  display: grid;
+  grid-template-columns: 113px 113px;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px;
+  width: 290px;
+  padding: 24px;
+  background: #EEEEEE;
+  border-radius: 16px;
+}
+.auction .card-diamondPrice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.auction .card-price {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.auction .card-number {
+  margin-top: 6px;
+  margin-bottom: 0;
+}
+.auction .card-time {
+  margin-bottom: 6px;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 428px) {
+  .hero {
+    max-width: 1250px;
+  }
+  .hero .hero-launching {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero .hero-launchingPhoto {
+    position: static;
+  }
 }/*# sourceMappingURL=main.css.map */

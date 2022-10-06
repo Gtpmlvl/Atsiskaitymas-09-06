@@ -52,7 +52,7 @@ body{
 .hero{
     padding-top:80px;
     padding-left: 32px;
-    
+    padding-right: 32px;
     padding-bottom: 80px;;
     max-width:428px;
     margin-left: auto;
@@ -107,33 +107,44 @@ body{
     background-color: transparent;
 
 }
+.hero-launching{
+  margin-left: auto;
+  margin-right: auto;
 
-
+}
+.hero-launchingPhoto{
+  
+  
+  position: absolute;
+  top:21px;
+  left:253px;
+  
+  
   
 }
+.hero-launchingImage{
+  height: 300px;
+}
+}
+
 // .hero-launchingInfo{
 //   position: relative;
 //   width: 100%;
 //   overflow: hidden;
 // }
 
-.hero-launchingImage{
-  width:190px;
-  height: 278px;
-  position: absolute;
-  top:25px;
-  left:190px;
-  
-  width: 100%;
-  
-  
 
-}
+
+
 
 .free-nft{
+  max-width:428px;
   height: 326px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  background:linear-gradient(0deg, #FF3998, #FF8139, #39FFA0);
+  background-image: url('../IMG/background.svg') ;
+  background-size: cover;
   
 
    .nft-container{
@@ -168,5 +179,105 @@ body{
     margin: 0;
    
   }
+
 }
+.companies{
+  max-width: 428px;
+  margin-left:auto;
+  margin-right: auto;
+  .notOnmobile{
+    display: none;
+  }
+  .companies-group{
+    display: grid;
+    grid-template-columns: 182px auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    column-gap:28px ;
+    row-gap: 28px;
+  }
+ .company-logo{
+  width: 156px;
+ }
+
+
+}
+
+.auction{
+  .card-smallHeading{
+    
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FF8139;
+    margin-bottom: 6px;
+    margin-top: 0;
+    
+  }
+  .card-bid{
+    margin-top: 0;
+    margin-bottom: 6px;
+  }
+  .card-name{
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+  }
+  .card-info{
+    display: grid;
+    grid-template-columns: 113px 113px;
+    column-gap: 24px;
+    width: 290px;
+    padding: 24px;
+    background: #EEEEEE;
+    border-radius: 16px;
+    
+    
+  }
+
+  .card-diamondPrice{
+    display: flex;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+  .card-price{
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  .card-number{
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+  .card-time{
+    margin-bottom: 6px;
+    margin-top: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:428px){
+ 
+.hero{
+  max-width: 1250px;
+  .hero-launching{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .hero-launchingPhoto{
+    position: static;
+  }
+}
+}
+  
+
 
