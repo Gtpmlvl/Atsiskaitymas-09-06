@@ -12,13 +12,14 @@ body {
   font-family: "Inter";
   background: #FFFFFF;
   height: 3300px;
+  min-width: 425px;
 }
 
 section {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  max-width: 425px;
+  min-width: 425px;
 }
 
 .container {
@@ -184,6 +185,7 @@ section {
 
 .auction {
   height: 642px;
+  overflow-y: hidden;
 }
 .auction .card-smallHeading {
   font-size: 12px;
@@ -415,6 +417,8 @@ section {
   font-weight: 400;
   line-height: 20px;
   color: #555555;
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
 .footer .social-icons {
   display: -webkit-box;
@@ -428,4 +432,26 @@ section {
 }
 .footer li {
   margin-bottom: 20px;
+}
+.footer a:visited {
+  color: #999999;
+}
+
+.footer-desktop {
+  display: none;
+}
+
+.copyright-style {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #999999;
+  margin-top: 64px;
+  margin-bottom: 105px;
+}
+
+@media screen and (min-width: 600px) {
+  .section {
+    max-width: 1440px;
+  }
 }/*# sourceMappingURL=main.css.map */

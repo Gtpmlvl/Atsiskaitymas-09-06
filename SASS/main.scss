@@ -6,6 +6,8 @@ body{
   font-family: 'Inter';
   background: #FFFFFF;
   height: 3300px;
+  min-width: 425px;
+  
   
   
 }
@@ -14,14 +16,18 @@ section{
   // max-width:425px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  max-width: 425px;
+ 
+ overflow: hidden;
+ min-width: 425px;
   
-  
-  
+ }
+ 
+
+
+
+.section{
   
 }
-
 
 .container{
   padding-left: 32px;
@@ -185,6 +191,7 @@ z-index:-1;
   background-image: url('../IMG/background.svg') ;
   background-size: cover;
   
+  
 
    .nft-container{
     
@@ -244,6 +251,7 @@ z-index:-1;
 
 .auction{
   height:642px;
+  overflow-y: hidden ;
 
 
   .card-smallHeading{
@@ -508,6 +516,8 @@ z-index:-1;
   font-weight: 400;
   line-height: 20px;
   color:#555555;
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
 .social-icons{
   display: flex;
@@ -523,28 +533,33 @@ z-index:-1;
 li{
   margin-bottom:20px;
 }
+a:visited{
+  color:#999999;
 }
 
-@media screen and (min-width: 425px){
-  
-  // section{
-  //   overflow: visible;
-  //   width:1425px;
-  // }
-  
-  .hero{
-
-
-  }
-
-  .fre-nft{
-
-  }
-  .companies{
-
-  }
-  .auction{}
 }
+
+.footer-desktop{
+  display: none;
+}
+
+.copyright-style{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #999999;
+  margin-top: 64px;
+  margin-bottom: 105px;
+}
+
+
+
+@media screen and (min-width: 600px){
+  
+ .section{
+  max-width: 1440px;
+ }
+  }
 
 
 
