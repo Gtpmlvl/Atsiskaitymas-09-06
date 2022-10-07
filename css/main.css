@@ -14,7 +14,6 @@ body {
 }
 
 section {
-  width: 425px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -37,6 +36,8 @@ section {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header .logo {
   width: 198px;
@@ -49,9 +50,9 @@ section {
 }
 
 .hero {
+  height: 570px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 .hero .hero-smallTitle {
   font-size: 16px;
@@ -94,27 +95,30 @@ section {
   background-color: transparent;
 }
 .hero .hero-launching {
-  width: 100%;
-  height: 100%;
+  height: 448px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 42px;
+  padding-bottom: 40px;
   padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 80px;
+}
+.hero .hero-launchingInfo {
+  width: 100%;
 }
 .hero .hero-launchingPhoto {
-  width: 100%;
   position: relative;
+  height: 278px;
+  width: 190px;
 }
 .hero .hero-launchingImage {
-  height: 100%;
+  height: 278px;
   position: absolute;
-  top: -114px;
-  right: -220px;
-  z-index: -1;
-  overflow: hidden;
+  top: -17%;
+  left: -43%;
 }
 
 .free-nft {
@@ -174,6 +178,9 @@ section {
   width: 156px;
 }
 
+.auction {
+  height: 642px;
+}
 .auction .card-smallHeading {
   font-size: 12px;
   line-height: 12px;
@@ -216,7 +223,6 @@ section {
   border-top-left-radius: 0;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  overflow: hidden;
 }
 .auction .auction-cardsGroup {
   display: -webkit-box;
@@ -260,7 +266,7 @@ section {
   line-height: 18px;
   font-weight: 400;
   margin-bottom: 6px;
-  margin-top: 0;
+  margin-top: 6px;
   color: #777777;
   text-align: right;
 }
@@ -271,4 +277,74 @@ section {
 .auction .auction-img {
   width: 290px;
   height: 278px;
+}
+
+.green {
+  height: 630px;
+  width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.green .green-container {
+  width: 60%;
+}
+.green .big-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 683px;
+  height: 630px;
+  overflow: hidden;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 60px;
+  padding-bottom: 64px;
+}
+.green .green-launchingPhoto {
+  width: 40%;
+}
+.green .green-launchingImage {
+  width: 206px;
+  height: 467px;
+  z-index: -1;
+}
+.green .green-smallTitle {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FF3998;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.green .green-bigTitle {
+  font-size: 48px;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 58px;
+  color: #111111;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.green .green-subText {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #555555;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+.green .btn {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 30px;
+  padding: 22px 56px 23px 56px;
+  border: 3px solid rgb(243, 59, 13);
+  border-radius: 40px;
+  text-align: center;
+  background-color: transparent;
 }/*# sourceMappingURL=main.css.map */
