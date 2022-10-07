@@ -56,7 +56,28 @@ section{
 
       }
    
-  .logo{
+      .menu-bar{
+        display: none;
+      }    
+      
+      .menu-barList{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap:28px;
+        align-items: center;
+      }
+       
+      .link-decoration{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #555555;
+      }
+     
+
+     .logo{
      width: 198px;
      height: 36px;
     
@@ -552,14 +573,52 @@ a:visited{
   margin-bottom: 105px;
 }
 
-
+.pvz{
+   .flexas{
+    display: flex;
+   }
+   .photodiv{
+   height: 100%;
+   }
+   .photo{
+    
+    max-width:100%;
+   }
+}
 
 @media screen and (min-width: 600px){
   
  .section{
   max-width: 1440px;
  }
+
+.header{
+ .burger{
+  display: none;
+ }
+
+.menu-bar{
+  display: block;
+}
+}
+.hero{
+  .hero-launchingImage{
+    top:-25%;
+    left:-77%;
+   
   }
+  .hero-launchingPhoto{
+    
+  }
+}
+    
+    
+
+}
+
+
+
+
 
 
 
