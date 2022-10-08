@@ -5,7 +5,11 @@
 body{
   font-family: 'Inter';
   background: #FFFFFF;
-  height: 3300px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  
+  
+  
  
   
   
@@ -31,8 +35,8 @@ section{
 
 
 .section{
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .container{
@@ -47,15 +51,15 @@ section{
 .header{
   
        .header-container{
-        padding-left: 32px;
-        padding-right: 32px;
+        padding-left: 2rem;
+        padding-right: 2rem;
        }
 
       .navigation{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 32px;
+        padding-top: 2rem;
         margin-left: auto;
         margin-right: auto;
 
@@ -72,7 +76,7 @@ section{
         list-style: none;
         padding-left: 0;
         display: flex;
-        gap:28px;
+        gap:1.8rem;
         align-items: center;
       }
        
@@ -85,16 +89,13 @@ section{
       }
      
 
-     .logo{
-     width: 198px;
-     height: 36px;
     
-  }
 
   .burger{
     font-size: 24px;
     color: #999999;
     height: 22px;
+    
 
     
   }
@@ -103,38 +104,40 @@ section{
 .hero{
    
     // width:482px;
-    height: 600px;
+    
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10%;
+    height: 100%;
+    min-height: 638px;
+    
     
    
     
 
 
   .hero-smallTitle{
-    font-size:16px;
-    line-height: 19px;
+    font-size:1rem;
+    line-height: 1.2rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FF3998; 
     font-style:normal;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     
     
     
   }
 
   .hero-bigTitle{
-    font-size:48px;
+    font-size:3rem;
     font-weight: 900;
     font-style: normal;
-    line-height: 58px;
+    line-height: 3.6rem;
     color:#111111;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     
     
     
@@ -144,23 +147,23 @@ section{
   .hero-subText{
     font-style:normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
     color:#555555;
     margin-top: 0;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
     
 
   }
 
   .btn{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     font-style: normal;
-    line-height: 30px;
-    padding:22px 56px 23px 56px;
+    line-height: 1.9rem;
+    padding:22px 56px 22px 56px ;
     border: 3px solid rgb(243, 59, 13);
-    border-radius: 40px;
+    border-radius: 2.5rem;
     text-align: center;
     background-color: transparent;
 
@@ -172,7 +175,7 @@ section{
   grid-template-columns: 1.5fr 1fr;
   
   padding-top: 0;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   
   
 
@@ -180,9 +183,9 @@ section{
 
 }
 .hero-launchingInfo{
-  height: 100%;
-  padding-top: 60px;
-  z-index: 1;
+  
+  padding-top: 3.8rem;
+  
   
   
   
@@ -193,8 +196,9 @@ section{
 
 }
 .hero-launchingImage{
-  max-width: 200%;
-  
+   max-width: 200%;
+   object-fit: fill;
+ 
 }
  .hero-launchingPhoto{ 
    
@@ -233,32 +237,38 @@ section{
 
 
 .free-nft{
-  
-  height: 326px;
+  height: 100%;
+  min-height: 326px;
   margin-left: auto;
   margin-right: auto;
   
   background-image: url('../IMG/background.svg') ;
+  background-position: 85%;
   background-size: cover;
+  background-repeat: no-repeat;
+  
+  
   
   
 
    .nft-container{
-    
     height: 326px;
+    align-items: flex-end;
     display: flex;
     align-items: flex-end;
     
     
    }
-   .flexas{
-    padding-top: 122px;
-    padding-bottom: 32px;
+   .nft-flexas{
+    padding-top: 7.6rem;
+    padding-bottom: 2rem;
+    
+    
    }
 
   .nft-Heading{
-    font-size:40px;
-    line-height: 48px;
+    font-size:2.5rem;
+    line-height: 3rem;
     color: #111111;
     font-weight: 500;
     margin-top: 0;
@@ -268,9 +278,9 @@ section{
 
   }
   .nft-subText{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1.9rem;
     color:#111111;
     margin: 0;
    
@@ -278,17 +288,20 @@ section{
 
 }
 .companies{
-  
+  height: 100%;
+  min-height: 240px;
   margin-left:auto;
   margin-right: auto;
+  
   .notOnmobile{
     display: none;
   }
+
   .companies-group{
     display: grid;
-    grid-template-columns: 182px auto;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     column-gap:28px ;
     row-gap: 28px;
     align-items: center;
@@ -301,7 +314,8 @@ section{
 }
 
 .auction{
-  height:642px;
+  height: 100%;
+  min-height:734px;
   overflow-y: hidden ;
 
 
@@ -361,7 +375,7 @@ section{
   
    min-width:290px ;
     
-    gap:18px;
+    gap:40px;
   }
   .auction-cards{
   width:290px ;
@@ -428,42 +442,56 @@ section{
 
 
 .green{
-     height: 630px;
+     height: 100%;
+     min-height: 630px;
      
      margin-left: auto;
      margin-right: auto;
 
+   .green-launchingPhoto{
+    padding-top: 80px;
+   }
+   .green-launchingImage{
+    max-width: 100%;
 
-   .green-container{
-    width: 100%;
+    
+    
     
    }
    .big-container{
-    display: flex;
-    justify-content: space-between;
-    height: 630px;
-    
-    
-    padding-top: 60px;
-    padding-bottom: 64px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
    }
-  .green-launchingPhoto{
-    width:206px;
-    height:467px ;
-    position: relative;
+  //  .big-container{
+  //   display: flex;
+  //   justify-content: space-between;
+  //   height: 630px;
+    
+    
+  //   padding-top: 60px;
+  //   padding-bottom: 64px;
+  //  }
+  // .green-launchingPhoto{
+  //   width:206px;
+  //   height:467px ;
+  //   position: relative;
     
    
 
-  }
-  .green-launchingImage{
-    width:206px;
-    height: 467px;
-    position: absolute;
-    top: 18%;
-    left:-4%;
+  // }
+  // .green-launchingImage{
+  //   width:206px;
+  //   height: 467px;
+  //   position: absolute;
+  //   top: 18%;
+  //   left:-4%;
     
   
-    z-index: -1;
+  //   z-index: -1;
+
+
+
+
   }
 
   .green-smallTitle{
@@ -514,7 +542,7 @@ section{
 
 }
 
-}
+
 
 
 .footer{
@@ -543,7 +571,7 @@ section{
 }
 .footer-contact{
   display: grid;
-  width: 260px;
+  // width: 260px;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 70px;
   row-gap: 40px;
@@ -624,11 +652,18 @@ a:visited{
    }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 635px){
   
-  section{
-    overflow: hidden;
+  html{
+    font-size: 18px;
   }
+
+  section{
+    
+    
+  }
+
+  
  .section{
   max-width: 1440px;
   padding-left: 80px;
@@ -646,12 +681,19 @@ a:visited{
 }
 .hero{
   
-   
+   .hero-launching{
+    grid-template-columns: repeat(2, 1fr);
+   }
   }
-  .hero-launchingPhoto{
+  .hero-launchingInfo{
+    align-self: baseline;
     
    
   }
+  
+ 
+
+
   .hero-launchingImage{
    
    
@@ -667,8 +709,59 @@ a:visited{
 
     .companies-group{
       grid-template-columns: repeat(5,1fr);
+      column-gap: 106px;
     }
   }
+
+
+  .footer{
+    .footer-container{
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      
+    }
+    .footer-contact{
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-desktop{
+      display: block;
+    }
+
+    .footer-copyright{
+      display: flex;
+      justify-content: space-between;
+    }
+    .copyright-style{
+      margin-top: 120px;
+      margin-bottom: 71px;
+    }
+  }
+
+  .green-launchingPhoto{
+    align-self: center;
+  }
+  .green{
+    .big-container{
+      
+    }
+    .green-container{
+      align-self: center;
+    }
+  }
+  .nft{
+    .nft-flexas{
+      height: 80%;
+    }
+
+
+
+  }
+
+ 
+
 }
     
     

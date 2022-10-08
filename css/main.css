@@ -11,7 +11,9 @@ body {
 body {
   font-family: "Inter";
   background: #FFFFFF;
-  height: 3300px;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
 }
 
 section {
@@ -22,8 +24,8 @@ section {
 }
 
 .section {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .container {
@@ -32,8 +34,8 @@ section {
 }
 
 .header .header-container {
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .header .navigation {
   display: -webkit-box;
@@ -45,7 +47,7 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 32px;
+  padding-top: 2rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,7 +60,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 28px;
+  gap: 1.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -70,10 +72,6 @@ section {
   line-height: 20px;
   color: #555555;
 }
-.header .logo {
-  width: 198px;
-  height: 36px;
-}
 .header .burger {
   font-size: 24px;
   color: #999999;
@@ -81,48 +79,48 @@ section {
 }
 
 .hero {
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10%;
+  height: 100%;
+  min-height: 638px;
 }
 .hero .hero-smallTitle {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FF3998;
   font-style: normal;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 .hero .hero-bigTitle {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   font-style: normal;
-  line-height: 58px;
+  line-height: 3.6rem;
   color: #111111;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .hero .hero-subText {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
   color: #555555;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .hero .btn {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   font-style: normal;
-  line-height: 30px;
-  padding: 22px 56px 23px 56px;
+  line-height: 1.9rem;
+  padding: 22px 56px 22px 56px;
   border: 3px solid rgb(243, 59, 13);
-  border-radius: 40px;
+  border-radius: 2.5rem;
   text-align: center;
   background-color: transparent;
 }
@@ -130,53 +128,59 @@ section {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   padding-top: 0;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 .hero .hero-launchingInfo {
-  height: 100%;
-  padding-top: 60px;
-  z-index: 1;
+  padding-top: 3.8rem;
 }
 .hero .hero-launchingImage {
   max-width: 200%;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .free-nft {
-  height: 326px;
+  height: 100%;
+  min-height: 326px;
   margin-left: auto;
   margin-right: auto;
   background-image: url("../IMG/background.svg");
+  background-position: 85%;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .free-nft .nft-container {
   height: 326px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: flex-end;
 }
-.free-nft .flexas {
-  padding-top: 122px;
-  padding-bottom: 32px;
+.free-nft .nft-flexas {
+  padding-top: 7.6rem;
+  padding-bottom: 2rem;
 }
 .free-nft .nft-Heading {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   color: #111111;
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 12px;
 }
 .free-nft .nft-subText {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.9rem;
   color: #111111;
   margin: 0;
 }
 
 .companies {
+  height: 100%;
+  min-height: 240px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -185,9 +189,9 @@ section {
 }
 .companies .companies-group {
   display: grid;
-  grid-template-columns: 182px auto;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   -webkit-column-gap: 28px;
      -moz-column-gap: 28px;
           column-gap: 28px;
@@ -201,7 +205,8 @@ section {
 }
 
 .auction {
-  height: 642px;
+  height: 100%;
+  min-height: 734px;
   overflow-y: hidden;
 }
 .auction .card-smallHeading {
@@ -252,7 +257,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   min-width: 290px;
-  gap: 18px;
+  gap: 40px;
 }
 .auction .auction-cards {
   width: 290px;
@@ -303,38 +308,23 @@ section {
 }
 
 .green {
-  height: 630px;
+  height: 100%;
+  min-height: 630px;
   margin-left: auto;
   margin-right: auto;
 }
-.green .green-container {
-  width: 100%;
-}
-.green .big-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 630px;
-  padding-top: 60px;
-  padding-bottom: 64px;
-}
 .green .green-launchingPhoto {
-  width: 206px;
-  height: 467px;
-  position: relative;
+  padding-top: 80px;
 }
 .green .green-launchingImage {
-  width: 206px;
-  height: 467px;
-  position: absolute;
-  top: 18%;
-  left: -4%;
-  z-index: -1;
+  max-width: 100%;
 }
-.green .green-smallTitle {
+.green .big-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.green-smallTitle {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.1em;
@@ -345,7 +335,8 @@ section {
   margin-top: 0;
   margin-bottom: 24px;
 }
-.green .green-biggerTitle {
+
+.green-biggerTitle {
   font-size: 48px;
   font-weight: 900;
   font-style: normal;
@@ -354,7 +345,8 @@ section {
   margin-top: 24px;
   margin-bottom: 24px;
 }
-.green .green-subText {
+
+.green-subText {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -363,7 +355,8 @@ section {
   margin-top: 0;
   margin-bottom: 32px;
 }
-.green .btn {
+
+.btn {
   font-size: 20px;
   font-weight: 600;
   font-style: normal;
@@ -407,7 +400,6 @@ section {
 }
 .footer .footer-contact {
   display: grid;
-  width: 260px;
   grid-template-columns: repeat(2, 1fr);
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
@@ -482,9 +474,9 @@ section {
   padding-top: 200px;
 }
 
-@media screen and (min-width: 600px) {
-  section {
-    overflow: hidden;
+@media screen and (min-width: 635px) {
+  html {
+    font-size: 18px;
   }
   .section {
     max-width: 1440px;
@@ -497,10 +489,61 @@ section {
   .header .menu-bar {
     display: block;
   }
+  .hero .hero-launching {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-launchingInfo {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
   .companies .notOnmobile {
     display: block;
   }
   .companies .companies-group {
     grid-template-columns: repeat(5, 1fr);
+    -webkit-column-gap: 106px;
+       -moz-column-gap: 106px;
+            column-gap: 106px;
+  }
+  .footer .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .footer-contact {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer .footer-desktop {
+    display: block;
+  }
+  .footer .footer-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .copyright-style {
+    margin-top: 120px;
+    margin-bottom: 71px;
+  }
+  .green-launchingPhoto {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .green .green-container {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .nft .nft-flexas {
+    height: 80%;
   }
 }/*# sourceMappingURL=main.css.map */
