@@ -6,7 +6,7 @@ body{
   font-family: 'Inter';
   background: #FFFFFF;
   height: 3300px;
-  min-width: 425px;
+ 
   
   
   
@@ -16,9 +16,14 @@ section{
   // max-width:425px;
   margin-left: auto;
   margin-right: auto;
+  
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
  
- overflow: hidden;
- min-width: 425px;
+ 
+
+
   
  }
  
@@ -26,12 +31,12 @@ section{
 
 
 .section{
-  
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .container{
-  padding-left: 32px;
-  padding-right: 32px;
+ 
   
   margin-left: auto;
   margin-right: auto;
@@ -41,7 +46,10 @@ section{
 
 .header{
   
-  
+       .header-container{
+        padding-left: 32px;
+        padding-right: 32px;
+       }
 
       .navigation{
         display: flex;
@@ -95,9 +103,10 @@ section{
 .hero{
    
     // width:482px;
-    height: 570px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10%;
     
    
     
@@ -113,6 +122,9 @@ section{
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 24px;
+    
+    
+    
   }
 
   .hero-bigTitle{
@@ -123,6 +135,10 @@ section{
     color:#111111;
     margin-top: 24px;
     margin-bottom: 24px;
+    
+    
+    
+    
   }
 
   .hero-subText{
@@ -151,50 +167,63 @@ section{
 }
 .hero-launching{
   
-  height: 448px;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 42px;
+  
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  
+  padding-top: 0;
   padding-bottom: 40px;
-  padding-left: 32px;
+  
   
 
   
 
 }
 .hero-launchingInfo{
-  width: 100%;
+  height: 100%;
+  padding-top: 60px;
+  z-index: 1;
+  
+  
+  
   
 
-}
-.hero-launchingPhoto{
-  position: relative;
-   height:278px;
-   width: 190px;
-   
- 
-
-
-
-
-
   
+  
+
 }
 .hero-launchingImage{
-height: 278px;
-position: absolute;
-// top:-52px;
-// left:-69px;
-top: -17%;
-left:-43%;
-z-index:-1;
-}
-  
-  
-  
-  
+  max-width: 200%;
   
 }
+ .hero-launchingPhoto{ 
+   
+    
+ }
+   
+}
+
+
+
+
+
+  
+// }
+// .hero-launchingImage{
+// height: 278px;
+// position: absolute;
+// // top:-52px;
+// // left:-69px;
+// top: -17%;
+// left:-43%;
+// z-index:-1;
+// }
+  
+  
+  
+  
+  
+
 
 
 
@@ -262,6 +291,7 @@ z-index:-1;
     padding-bottom: 64px;
     column-gap:28px ;
     row-gap: 28px;
+    align-items: center;
   }
  .company-logo{
   width: 156px;
@@ -328,8 +358,8 @@ z-index:-1;
 
   .auction-cardsGroup{
    display: flex;
-    
-    min-width:290px ;
+  
+   min-width:290px ;
     
     gap:18px;
   }
@@ -413,8 +443,7 @@ z-index:-1;
     justify-content: space-between;
     height: 630px;
     
-    padding-left: 32px;
-    padding-right: 32px;
+    
     padding-top: 60px;
     padding-bottom: 64px;
    }
@@ -493,10 +522,10 @@ z-index:-1;
   max-width: 425px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
   
  .footer-container{
-  padding-left: 32px;
-  padding-right: 32px;
+  
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -574,8 +603,13 @@ a:visited{
 }
 
 .pvz{
+  margin-left: auto;
+  margin-right: auto;
+
    .flexas{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
    }
    .photodiv{
    height: 100%;
@@ -584,12 +618,21 @@ a:visited{
     
     max-width:100%;
    }
+
+   .grid1{
+    padding-top: 200px;
+   }
 }
 
 @media screen and (min-width: 600px){
   
+  section{
+    overflow: hidden;
+  }
  .section{
   max-width: 1440px;
+  padding-left: 80px;
+  padding-right: 80px;
  }
 
 .header{
@@ -602,19 +645,35 @@ a:visited{
 }
 }
 .hero{
-  .hero-launchingImage{
-    top:-25%;
-    left:-77%;
+  
    
   }
   .hero-launchingPhoto{
     
+   
+  }
+  .hero-launchingImage{
+   
+   
+  }
+
+
+  .companies{
+
+
+    .notOnmobile{
+      display: block;
+    }
+
+    .companies-group{
+      grid-template-columns: repeat(5,1fr);
+    }
   }
 }
     
     
 
-}
+
 
 
 

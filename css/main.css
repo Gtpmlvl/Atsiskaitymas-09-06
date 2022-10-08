@@ -12,23 +12,29 @@ body {
   font-family: "Inter";
   background: #FFFFFF;
   height: 3300px;
-  min-width: 425px;
 }
 
 section {
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
-  min-width: 425px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.section {
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .container {
-  padding-left: 32px;
-  padding-right: 32px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.header .header-container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
 .header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +49,27 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
+.header .menu-bar {
+  display: none;
+}
+.header .menu-barList {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .link-decoration {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #555555;
+}
 .header .logo {
   width: 198px;
   height: 36px;
@@ -54,9 +81,10 @@ section {
 }
 
 .hero {
-  height: 570px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10%;
 }
 .hero .hero-smallTitle {
   font-size: 16px;
@@ -99,33 +127,19 @@ section {
   background-color: transparent;
 }
 .hero .hero-launching {
-  height: 448px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 42px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding-top: 0;
   padding-bottom: 40px;
-  padding-left: 32px;
 }
 .hero .hero-launchingInfo {
-  width: 100%;
-}
-.hero .hero-launchingPhoto {
-  position: relative;
-  height: 278px;
-  width: 190px;
+  height: 100%;
+  padding-top: 60px;
+  z-index: 1;
 }
 .hero .hero-launchingImage {
-  height: 278px;
-  position: absolute;
-  top: -17%;
-  left: -43%;
-  z-index: -1;
+  max-width: 200%;
 }
-
 .free-nft {
   height: 326px;
   margin-left: auto;
@@ -178,6 +192,9 @@ section {
      -moz-column-gap: 28px;
           column-gap: 28px;
   row-gap: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .companies .company-logo {
   width: 156px;
@@ -301,8 +318,6 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 630px;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-top: 60px;
   padding-bottom: 64px;
 }
@@ -365,10 +380,9 @@ section {
   max-width: 425px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 .footer .footer-container {
-  padding-left: 32px;
-  padding-right: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -450,8 +464,43 @@ section {
   margin-bottom: 105px;
 }
 
+.pvz {
+  margin-left: auto;
+  margin-right: auto;
+}
+.pvz .flexas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.pvz .photodiv {
+  height: 100%;
+}
+.pvz .photo {
+  max-width: 100%;
+}
+.pvz .grid1 {
+  padding-top: 200px;
+}
+
 @media screen and (min-width: 600px) {
+  section {
+    overflow: hidden;
+  }
   .section {
     max-width: 1440px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .header .burger {
+    display: none;
+  }
+  .header .menu-bar {
+    display: block;
+  }
+  .companies .notOnmobile {
+    display: block;
+  }
+  .companies .companies-group {
+    grid-template-columns: repeat(5, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */
