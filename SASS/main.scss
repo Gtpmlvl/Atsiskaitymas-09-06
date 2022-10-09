@@ -24,15 +24,14 @@ section{
   overflow-x: hidden;
   overflow-y: hidden;
   
+}
+ 
+header{
+  margin-left: auto;
+  margin-right: auto;
   
- 
- 
 
-
-  
- }
- 
-
+}
 
 
 .section{
@@ -195,25 +194,13 @@ section{
   
   padding-top: 3.8rem;
   
-  
-  
-  
-  
-
-  
-  
-
 }
 .hero-launchingImage{
    max-width: 200%;
-   object-fit: fill;
+  
  
 }
- .hero-launchingPhoto{ 
-   
-    
- }
-   
+
 }
 
 
@@ -235,21 +222,12 @@ section{
   
   
   
-  
-
-
-
-
-
-
-
-
-
 .free-nft{
   height: 100%;
   min-height: 326px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
   
   
   
@@ -658,153 +636,13 @@ a:visited{
   margin-bottom: 105px;
 }
 
-.pvz{
-  margin-left: auto;
-  margin-right: auto;
-
-   .flexas{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-   }
-   .photodiv{
-   height: 100%;
-   }
-   .photo{
-    
-    max-width:100%;
-   }
-
-   .grid1{
-    padding-top: 200px;
-   }
-
-   
 
 
-
-}
-
-
- 
-
-@media screen and (min-width: 630px){
-  
-  html{
-    font-size: 18px;
-  }
 
 
 
  
- .section{
-  max-width: 1445px;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
- }
-
-.header{
- .burger{
-  display: none;
- }
-
-  .link-decoration{
-  font-size:1rem;
- }
-  .menu-bar{
-  display: block;
-}
-}
-.hero{
-  
-   .hero-launching{
-    grid-template-columns: 1fr 1.2fr;
-   }
-  }
-  .hero-launchingInfo{
-    align-self: center;
-    padding-bottom: 3.8rem;
-    
-   
-  }
-
-
-  .companies{
-
-
-    .notOnmobile{
-      display: block;
-    }
-
-    .companies-group{
-      grid-template-columns: repeat(5,1fr);
-      column-gap: 106px;
-    }
-  }
-
-
-  .footer{
-    .footer-container{
-      
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-     
-      
-    }
-    .footer-contact{
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .footer-desktop{
-      display: block;
-    }
-
-    .footer-copyright{
-      display: flex;
-      justify-content: space-between;
-    }
-    .copyright-style{
-      margin-top: 120px;
-      margin-bottom: 71px;
-    }
-  }
-
-  
-  .green{
-    
-    .green-container{
-      align-self: center;
-    }
-
-    .green-launchingPhoto{
-      align-self: center;
-    }
-  }
-  
-
- 
-
-  .free-nft{
-
-    .nft-container{
-      border-bottom-left-radius: 20px;
-      border-top-left-radius: 20px;
-    }
-
-    
-
-    .nft-flexas{
-     
-    }
-
-    br{
-      display: none;
-    }
-
-
-  }
-}
+@import 'media';
     
     
 

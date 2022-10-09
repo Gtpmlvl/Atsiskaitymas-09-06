@@ -23,6 +23,11 @@ section {
   overflow-y: hidden;
 }
 
+header {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .section {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -140,14 +145,14 @@ section {
 }
 .hero .hero-launchingImage {
   max-width: 200%;
-  -o-object-fit: fill;
-     object-fit: fill;
 }
+
 .free-nft {
   height: 100%;
   min-height: 326px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0;
 }
 .free-nft .nft-container {
   height: 326px;
@@ -471,25 +476,7 @@ section {
   margin-bottom: 105px;
 }
 
-.pvz {
-  margin-left: auto;
-  margin-right: auto;
-}
-.pvz .flexas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-.pvz .photodiv {
-  height: 100%;
-}
-.pvz .photo {
-  max-width: 100%;
-}
-.pvz .grid1 {
-  padding-top: 200px;
-}
-
-@media screen and (min-width: 630px) {
+@media screen and (min-width: 1000px) {
   html {
     font-size: 18px;
   }
