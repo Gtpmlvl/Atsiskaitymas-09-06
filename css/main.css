@@ -345,35 +345,35 @@ header {
 }
 
 .green-smallTitle {
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #FF3998;
   font-style: normal;
   font-weight: 700;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .green-biggerTitle {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 900;
   font-style: normal;
-  line-height: 58px;
+  line-height: 3.6rem;
   color: #111111;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .green-subText {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.25rem;
+  line-height: 1.8rem;
   color: #555555;
   margin-top: 0;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -412,7 +412,7 @@ header {
   margin-top: 0;
   margin-bottom: 28px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -432,19 +432,19 @@ header {
 }
 .footer .link-decoration {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   color: #555555;
 }
 .footer .footer-subText {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 20px;
   color: #555555;
-  margin-top: 30px;
-  margin-bottom: 32px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .footer .social-icons {
   display: -webkit-box;
@@ -469,7 +469,7 @@ header {
 
 .copyright-style {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   color: #999999;
   margin-top: 64px;
