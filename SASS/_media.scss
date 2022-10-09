@@ -1,0 +1,117 @@
+@media screen and (min-width: 1000px){
+  // DESKTOP//
+  html{
+    font-size: 18px;
+  }
+
+
+
+ 
+ .section{
+  max-width: 1445px;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+ }
+
+.header{
+ .burger{
+  display: none;
+ }
+
+  .link-decoration{
+  font-size:1rem;
+ }
+  .menu-bar{
+  display: block;
+}
+}
+.hero{
+  
+   .hero-launching{
+    grid-template-columns: 1fr 1.2fr;
+   }
+  }
+  .hero-launchingInfo{
+    align-self: center;
+    padding-bottom: 3.8rem;
+    
+   
+  }
+
+
+  .companies{
+
+
+    .notOnmobile{
+      display: block;
+    }
+
+    .companies-group{
+      grid-template-columns: repeat(5,1fr);
+      column-gap: 106px;
+    }
+  }
+
+
+  .footer{
+    .footer-container{
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     
+      
+    }
+    .footer-contact{
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-desktop{
+      display: block;
+    }
+
+    .footer-copyright{
+      display: flex;
+      justify-content: space-between;
+    }
+    .copyright-style{
+      margin-top: 120px;
+      margin-bottom: 71px;
+    }
+  }
+
+  
+  .green{
+    
+    .green-container{
+      align-self: center;
+    }
+
+    .green-launchingPhoto{
+      align-self: center;
+    }
+  }
+  
+
+ 
+
+  .free-nft{
+
+    .nft-container{
+      border-bottom-left-radius: 20px;
+      border-top-left-radius: 20px;
+    }
+
+    
+
+    .nft-flexas{
+     
+    }
+
+    br{
+      display: none;
+    }
+
+
+  }
+}

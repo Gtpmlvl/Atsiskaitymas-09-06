@@ -1,0 +1,668 @@
+@use 'reset';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
+
+
+body{
+  font-family: 'Inter';
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  
+  
+  
+ 
+  
+  
+  
+}
+
+section{
+  // max-width:425px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  overflow-x: hidden;
+  overflow-y: hidden;
+  
+}
+ 
+header{
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+
+.section{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 100%;
+}
+
+.container{
+ 
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+.header{
+  
+       .header-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+       }
+
+      .navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+
+        
+        
+
+      }
+   
+      .menu-bar{
+        display: none;
+      }    
+       
+      
+
+
+      .menu-barList{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap:1.8rem;
+        align-items: center;
+      }
+       
+      .link-decoration{
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        color: #555555;
+      }
+      .red{
+        color: #FF3998;
+      }
+     
+
+    
+
+  .burger{
+    font-size: 24px;
+    color: #999999;
+    height: 22px;
+    
+
+    
+  }
+
+}
+.hero{
+   
+    // width:482px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    min-height: 638px;
+    
+    
+    
+   
+    
+
+
+  .hero-smallTitle{
+    font-size:1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FF3998; 
+    font-style:normal;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    
+    
+    
+  }
+
+  .hero-bigTitle{
+    font-size:3rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 3.6rem;
+    color:#111111;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    
+    
+    
+  }
+
+  .hero-subText{
+    font-style:normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color:#555555;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    
+
+  }
+
+  .btn{
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.9rem;
+    padding:22px 56px 22px 56px ;
+    border: 3px solid rgb(243, 59, 13);
+    border-radius: 2.5rem;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hero-launching{
+  
+  
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  
+  padding-top: 0;
+  padding-bottom: 2.5rem;
+  
+  
+
+  
+
+}
+.hero-launchingInfo{
+  
+  padding-top: 3.8rem;
+  
+}
+.hero-launchingImage{
+   max-width: 200%;
+  
+ 
+}
+
+}
+
+
+
+
+
+  
+// }
+// .hero-launchingImage{
+// height: 278px;
+// position: absolute;
+// // top:-52px;
+// // left:-69px;
+// top: -17%;
+// left:-43%;
+// z-index:-1;
+// }
+  
+  
+  
+  
+.free-nft{
+  height: 100%;
+  min-height: 326px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  
+  
+  
+  
+  
+  
+
+   .nft-container{
+    height: 326px;
+    min-width: 1280px;
+     align-items: flex-end;
+     display: flex;
+     align-items: flex-end;
+    background-image: url('../IMG/background.svg') ;
+    background-position: 85%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-top: 7.6rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    
+    
+    
+    
+   }
+   .nft-flexas{
+    padding-top: 7.6rem;
+    padding-bottom: 2rem;
+    
+    
+   }
+
+  .nft-Heading{
+    font-size:2.5rem;
+    line-height: 3rem;
+    color: #111111;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 12px;
+   
+
+
+  }
+  .nft-subText{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color:#111111;
+    margin: 0;
+   
+  }
+
+}
+.companies{
+  height: 100%;
+  min-height: 240px;
+  margin-left:auto;
+  margin-right: auto;
+  
+  .notOnmobile{
+    display: none;
+  }
+
+  .companies-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    column-gap:28px ;
+    row-gap: 28px;
+    align-items: center;
+  }
+ .company-logo{
+  width: 156px;
+ }
+
+
+}
+
+.auction{
+  height: 100%;
+  min-height:660px;
+  overflow-y: hidden ;
+
+
+  .card-smallHeading{
+    
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FF8139;
+    margin-bottom: 6px;
+    margin-top: 0;
+    
+  }
+  .card-bid{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 6px;
+    color:#777777;
+    text-align: right;
+  }
+  .card-name{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 12px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    color:#111111;
+
+  }
+  .card-info{
+    display: grid;
+    grid-template-columns: 110px auto;
+   
+    padding: 24px;
+    column-gap:20px;
+    align-items: center;
+    background: #EEEEEE;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    
+
+    
+    
+    
+  }
+
+
+
+  .auction-cardsGroup{
+   display: flex;
+  
+   min-width:290px ;
+    
+    gap:40px;
+  }
+  .auction-cards{
+  width:290px ;
+  height: 278px;
+  }
+
+  .card-diamondPrice{
+    display: grid;
+    grid-template-columns: 13px auto;
+    margin-bottom: 6px;
+    margin-top: 6px;
+   
+    
+  }
+  .diamond-logo{
+    align-self: center;
+    
+  }
+ 
+  
+
+  .card-price{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: right;
+    
+  }
+  .card-number{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 6px;
+    margin-bottom: 0;
+    color:#777777;
+  }
+  .card-time{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color:#777777;
+    text-align: right;
+  }
+
+  .image-space{
+   
+    width: 100%;
+    height: 100%;
+  }
+  
+
+  
+  .auction-img{
+    width:290px ;
+    height: 278px;
+    
+  }
+
+}
+
+
+.green{
+     height: 100%;
+     min-height: 630px;
+     
+     
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 64px;
+     border-top: 2px solid #EEEEEE;
+     border-bottom: 2px solid #EEEEEE;
+
+
+   .green-launchingPhoto{
+    padding-top: 80px;
+   }
+   .green-launchingImage{
+    max-width: 100%;
+
+    
+    
+    
+   }
+
+
+
+   .big-container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+   }
+  //  .big-container{
+  //   display: flex;
+  //   justify-content: space-between;
+  //   height: 630px;
+    
+    
+  //   padding-top: 60px;
+  //   padding-bottom: 64px;
+  //  }
+  // .green-launchingPhoto{
+  //   width:206px;
+  //   height:467px ;
+  //   position: relative;
+    
+   
+
+  // }
+  // .green-launchingImage{
+  //   width:206px;
+  //   height: 467px;
+  //   position: absolute;
+  //   top: 18%;
+  //   left:-4%;
+    
+  
+  //   z-index: -1;
+
+
+
+
+  }
+
+  .green-smallTitle{
+    
+    font-size:1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FF3998; 
+    font-style:normal;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .green-biggerTitle{
+   
+    font-size:3rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 3.6rem;
+    color:#111111;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .green-subText{
+    
+
+
+    font-style:normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color:#555555;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    
+
+  }
+
+  .btn{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 30px;
+    padding:22px 56px 23px 56px;
+    border: 3px solid rgb(243, 59, 13);
+    border-radius: 40px;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+
+
+
+
+.footer{
+  margin-top: 64px;   
+  
+   margin-left: auto;
+   margin-right: auto;
+  overflow: hidden;
+  
+ .footer-container{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap:64px;
+ }
+.footer-smallHeading{
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size:1rem;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color:#555555;
+}
+.footer-contact{
+  display: grid;
+  // width: 260px;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 70px;
+  row-gap: 40px;
+}
+.footer-list{
+  list-style: none;
+  padding-left: 0;
+}
+.link-decoration{
+  text-decoration: none;
+  font-size:1.5rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 20px;
+  color: #555555;
+}
+
+.footer-subText{
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 20px;
+  color:#555555;
+  margin-top:2rem;
+  margin-bottom: 2rem;
+}
+.social-icons{
+  display: flex;
+  gap:16px;
+  color: #999999;
+}
+.footer-icon{
+  width: 18px;
+}
+.about-link{
+  
+}
+li{
+  margin-bottom:20px;
+}
+a:visited{
+  color:#999999;
+}
+
+}
+
+.footer-desktop{
+  display: none;
+}
+
+.copyright-style{
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 20px;
+  color: #999999;
+  margin-top: 64px;
+  margin-bottom: 105px;
+}
+
+
+
+
+
+
+ 
+@import 'media';
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
