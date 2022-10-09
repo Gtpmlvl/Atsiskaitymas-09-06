@@ -26,6 +26,7 @@ section {
 .section {
   padding-left: 2rem;
   padding-right: 2rem;
+  max-width: 100%;
 }
 
 .container {
@@ -71,6 +72,9 @@ section {
   font-size: 20px;
   line-height: 20px;
   color: #555555;
+}
+.header .red {
+  color: #FF3998;
 }
 .header .burger {
   font-size: 24px;
@@ -123,6 +127,7 @@ section {
   border-radius: 2.5rem;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 .hero .hero-launching {
   display: grid;
@@ -143,13 +148,10 @@ section {
   min-height: 326px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../IMG/background.svg");
-  background-position: 85%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 .free-nft .nft-container {
   height: 326px;
+  min-width: 1280px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -157,6 +159,16 @@ section {
   display: -ms-flexbox;
   display: flex;
   align-items: flex-end;
+  background-image: url("../IMG/background.svg");
+  background-position: 85%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  padding-top: 7.6rem;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 .free-nft .nft-flexas {
   padding-top: 7.6rem;
@@ -206,7 +218,7 @@ section {
 
 .auction {
   height: 100%;
-  min-height: 734px;
+  min-height: 660px;
   overflow-y: hidden;
 }
 .auction .card-smallHeading {
@@ -312,6 +324,9 @@ section {
   min-height: 630px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 64px;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
 }
 .green .green-launchingPhoto {
   padding-top: 80px;
@@ -366,11 +381,11 @@ section {
   border-radius: 40px;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .footer {
   margin-top: 64px;
-  max-width: 425px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
@@ -474,27 +489,31 @@ section {
   padding-top: 200px;
 }
 
-@media screen and (min-width: 635px) {
+@media screen and (min-width: 630px) {
   html {
     font-size: 18px;
   }
   .section {
-    max-width: 1440px;
-    padding-left: 80px;
-    padding-right: 80px;
+    max-width: 1445px;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
   }
   .header .burger {
     display: none;
+  }
+  .header .link-decoration {
+    font-size: 1rem;
   }
   .header .menu-bar {
     display: block;
   }
   .hero .hero-launching {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1.2fr;
   }
   .hero-launchingInfo {
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-bottom: 3.8rem;
   }
   .companies .notOnmobile {
     display: block;
@@ -535,15 +554,19 @@ section {
     margin-top: 120px;
     margin-bottom: 71px;
   }
-  .green-launchingPhoto {
-    -ms-flex-item-align: center;
-        align-self: center;
-  }
   .green .green-container {
     -ms-flex-item-align: center;
         align-self: center;
   }
-  .nft .nft-flexas {
-    height: 80%;
+  .green .green-launchingPhoto {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .free-nft .nft-container {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  .free-nft br {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */
